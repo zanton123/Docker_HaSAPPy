@@ -80,8 +80,8 @@ if [ $analysis_monfort = 1 ]; then
 		fastq-dump -O unselected/ --gzip SRR2064929 && \
 		fastq-dump -O unselected/ --gzip SRR2064930 && \
 		fastq-dump -O selected/ --gzip SRR2064886 && \
-		fastq-dump -O selected/ --gzip SRR2064896 && \ 
-		fastq-dump -O selected/ --gzip SRR2064898 && \ 
+		fastq-dump -O selected/ --gzip SRR2064896 && \
+		fastq-dump -O selected/ --gzip SRR2064898 && \
 		fastq-dump -O selected/ --gzip SRR2064899 && \
 		fastq-dump -O selected/ --gzip SRR2064902 && \
 		fastq-dump -O selected/ --gzip SRR2064905 && \
@@ -97,7 +97,7 @@ if [ $analysis_staring = 1 ]; then
 		cd /data && mkdir Staring_2017 && cd Staring_2017 && mkdir unselected && mkdir selected && \
 		fastq-dump -O unselected/ --gzip SRR663777 && \
 		fastq-dump -O selected/ --gzip SRR4885982 && \
-		fastq-dump -O selected/ --gzip SRR4886610 && \ 
+		fastq-dump -O selected/ --gzip SRR4886610 && \
 		fastq-dump -O selected/ --gzip SRR4887274
 	fi
 fi
