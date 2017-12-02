@@ -73,6 +73,8 @@ RUN cd /HaSAPPy/HaSAPPy && \
 		chmod +x PreprocessReads && \
 		cp HaSAPPY.py HaSAPPy && \
 		chmod +x HaSAPPy && \
+		cp GeneReference_built.py GeneReference_built && \
+		chmod +x GeneReference_built && \
 		mv PreprocessReads /usr/local/bin/
 
 RUN cd /HaSAPPy && \
