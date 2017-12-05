@@ -59,7 +59,7 @@ RUN wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.8.2-1/sratoolkit.2.8.2-1-u
 		tar -zxf sratoolkit.2.8.2-1-ubuntu64.tar.gz && \
 		rm sratoolkit.2.8.2-1-ubuntu64.tar.gz
 ENV PATH ${PATH}:/sratoolkit.2.8.2-1-ubuntu64/bin
-
+# ENV PYTHONPATH ${PYTHONPATH}:/HaSAPPy/HaSAPPy
 
 # Get HaSAPPy from github --------------!!-- NEED TO ADD RefSeq_human_GRCh38-hg38.txt to /HaSAPPy/docs/
 
