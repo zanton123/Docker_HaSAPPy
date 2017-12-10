@@ -1,8 +1,8 @@
-## HaSAPPy:Ubuntu 14.04
+# HaSAPPy:Ubuntu 14.04
 
 This container runs HaSAPPy interactively in an Ubuntu 14.04 bash shell and produces output in the /data folder, which should be mapped to an external volume with the Docker -v <DATA PATH>:/data command line option.
 
-# Usage:
+## Usage:
 ```
 
 xhost +local:root
@@ -38,7 +38,7 @@ HaSAPPy supports the use of **Nvidia GPUs** and for some functionality depends o
 
 This is the preferred solution for accessing the full functionality of HaSAPPy. A docker plugin is available at https://github.com/NVIDIA/nvidia-docker that faciliates a consistent way for GPU interaction with the container. At the time this docker plugin appears only implemented for Linux based docker hosts.
 
-# Usage:
+## Usage:
 ```
 
 xhost +local:root
