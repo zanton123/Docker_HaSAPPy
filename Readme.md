@@ -41,7 +41,6 @@ This is the preferred solution for accessing the full functionality of HaSAPPy. 
 
 ## Usage:
 ```
-
 xhost +local:root
 sudo docker run --runtime=nvidia -it -v <DATA PATH>:/data -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY hasappy100/hasappy:GPU
 xhost -
