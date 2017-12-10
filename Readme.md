@@ -9,8 +9,8 @@ xhost +local:root
 sudo docker run -it -v <DATA PATH>:/data -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY hasappy100/hasappy:ubuntu14.04
 xhost -
 ```
-*
-*
+
+
 **<DATA PATH>** is used to share data between host computer and Docker HaSAPPy container file systems. The folder is mapped as volume into the container **/data folder** for storing genomes, experimental input datasets, and output of the analysis. Due to a large amount of data that will be downloaded, consider setting aside at least 200 GB of disk space. We advise not to mount the docker image storage on the disk containing the root file system but symlink /var/lib/docker to a separate large hard disk to prevent the root file system from running out of disk space.
 For convenience a script is copied to <DATA PATH> for cleaning up docker images and containers. Use **cleanup-docker.sh** when running out of critical disk space.
 
